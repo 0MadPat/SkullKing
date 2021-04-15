@@ -31,7 +31,6 @@ public class DrawCards : MonoBehaviour
             {
                 GameObject newCard = Instantiate(Card);
                 string cardPath = "CardImages/SK_" + color + "_" + i;
-                Debug.Log("Karte: " + cardPath);
                 Sprite img = Resources.Load<Sprite>(cardPath);
                 newCard.GetComponent<Image>().sprite = img;
                 newCard.name = color + i;
